@@ -36,7 +36,6 @@ p{
 }
 
 .secondarytitle{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:white;
     font-size: 535%;
     width: 100%;
@@ -127,7 +126,6 @@ a:visited{
 }
 
 .subtitles{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:white;
     font-size: 450%;
     width: 100%;
@@ -137,7 +135,6 @@ a:visited{
 }
 
 .subtitlesalbum{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:white;
     font-size: 400%;
     width: 100%;
@@ -190,7 +187,6 @@ table{
 
 /*COLLABS SECTION*/
 .collabsubtitle{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:white;
     font-size: 250%;
     width: 100%;
