@@ -1,0 +1,11 @@
+.div-sign-in{
+    width: 40%;
+    transform: translate(75%,70%);
+}
+
+.sign-in-photo{
+    width: 25%;
+    padding: 0%;
+    margin: 0%;
+    transform: translate(0%,40%);
+}
