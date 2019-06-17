@@ -7,7 +7,8 @@ class configApp{
         'login' => 'adminController#login',
         'registrarse' => 'adminController#registrarse',
         'registro' => 'adminController#registro',
-        'ingresar' => 'adminController#ingresar'
+        'ingresar' => 'adminController#ingresar',
+        'logout' => 'adminController#logout'
     ]
 }
 
