@@ -9,3 +9,16 @@
     margin: 0%;
     transform: translate(0%,40%);
 }
+
+table{
+    transform: translate(0%,40%);
+}
+
+.button-header{
+    transform: translate(95%,30%);
+}
+
+.header-index{
+    text-align: right;
+    padding: 0.5%;
+}
