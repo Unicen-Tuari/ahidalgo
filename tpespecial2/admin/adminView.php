@@ -11,7 +11,7 @@ class adminView{
         $this->base_url = 'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']) . '/';
     }
 
-    function login(){
+    function mostrarLogin(){
         $this->smarty->assign('base_url', $this->base_url);
         return $this->smarty->display('templates/login.tpl');
     }
@@ -20,6 +20,12 @@ class adminView{
         $this->smarty->assign('base_url', $this->base_url);
         return $this->smarty->display('templates/registrarse.tpl');
     }
+
+    function album(){
+        $this->smarty->assign('base_url',$this->base_url);
+        $this->smarty->assign('album',$album);
+        return $this->smarty->display('templates/index.tpl');
+      }
 }
 
 ?>

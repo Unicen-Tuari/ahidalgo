@@ -12,9 +12,15 @@ class adminModel{
         $sentencia->execute(array($email, password_hash($password, PASSWORD_DEFAULT)));
     }
 
-    function getUsuario($email){
-        $sentencia = $this->db->prepare("SELECT * FROM 'usuario WHERE 'mail' = ?");
-        $sentencia->execute(array($email));
+    function getUsuario($usuario){
+        $sentencia = $this->db->prepare("SELECT * FROM 'usuario WHERE 'usuario' = ?");
+        $sentencia->execute(array($usuario));
+        return $sentencia->fetch();
+    }
+
+    function getAlbum(){
+        $sentencia = $this->db->prepare("SELECT * FROM 'discos WHERE 'disco' = ?");
+        $sentencia->execute(array($usuario));
         return $sentencia->fetch();
     }
 }

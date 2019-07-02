@@ -17,6 +17,16 @@ class adminController{
         return $this->view->login();
     }
 
+    function validarLogin($params = [])
+    {
+      $usuario = $this->adminModel->getUsuario($_POST['email']);
+      if(password_verify($_POST['password'], $usuario['password'])){
+        header('templates/index.tpl');
+      }
+      else {
+        header('templates/login.tpl');
+      }
+
     function registrarse(){
         return $this->view->registrarse();
     }
@@ -52,6 +62,13 @@ class adminController{
         session_start();
         session_destroy();
         header('Location: admin');
+    }
+
+    function discos(){
+
+        $tareas = $this->model->getAlbum();
+        return $this->view->albums($album);
+  
     }
 }
 ?>
