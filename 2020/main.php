@@ -7,6 +7,16 @@
  // Imprimiendo hola mundo
 
 echo "<p>";                   //Esto agregará un salto de línea
-echo "Hola mundo, soy Ariel!"
+echo "Hola mundo, soy Ariel!";
+echo "<p>";
+
+
+$string1 = "String de prueba";
+
+function stringreturn($string){
+    echo $string;
+}
+
+stringreturn($string1);
 
 ?>
