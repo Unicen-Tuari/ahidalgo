@@ -7,6 +7,6 @@
  // Imprimiendo hola mundo
 
 echo "<p>";                   //Esto agregará un salto de línea
-echo "Hola mundo, soy Ariel!";
+echo "Hola mundo, soy Ariel!"
 
 ?>
