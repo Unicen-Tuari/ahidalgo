@@ -36,3 +36,16 @@ h2{
     text-align: center;
     font-style: italic;
 }
+
+.bloque1{
+    background-color: darkgreen;
+    border: solid 5px red;
+}
+
+.inline1{
+    color: white;
+}
+
+.inline2{
+    font-size: large;
+}
