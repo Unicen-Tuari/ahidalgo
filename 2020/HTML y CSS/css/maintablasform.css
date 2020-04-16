@@ -16,11 +16,11 @@ tfoot{
 }
 
 thead{
-    background-color: slateblue;
-    color: white;
+    background-color: goldenrod;
+    color: black;
 }
 
 tbody{
     color: black;
-    background-color:yellow ;
+    background-color:yellowgreen ;
 }
