@@ -24,3 +24,8 @@ tbody{
     color: black;
     background-color:yellow ;
 }
+
+form{
+    background-color: yellowgreen;
+    width: 20%;
+}
