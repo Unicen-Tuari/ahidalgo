@@ -1,0 +1,26 @@
+table{
+    width: 20%;
+}
+
+table, td, tr{
+    border: 1px solid black;
+}
+
+td{
+    text-align: center;
+}
+
+tfoot{
+    color: red;
+    background-color: sandybrown;
+}
+
+thead{
+    background-color: slateblue;
+    color: white;
+}
+
+tbody{
+    color: black;
+    background-color:yellow ;
+}
