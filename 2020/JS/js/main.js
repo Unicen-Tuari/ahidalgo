@@ -26,3 +26,20 @@ function saludar(){
     let nodoSaludo = document.getElementById("txtSaludo");
     nodoSaludo.innerHTML = "Hola " + nombre;
 }
+
+//ejercicio calculadora de calorías
+let calorias = 0;
+sumarCantidad(0);
+
+function sumarCantidad(nuevas){
+    calorias += nuevas;
+    let nodoTotal = document.getElementById("txtTotal");
+    nodoTotal.innerHTML = calorias;
+}
+
+function sumarInput(){
+    let nodoInput = document.getElementById("calorias");
+    let nuevasCalorias = parseInt(nodoInput.value);
+    sumarCantidad(nuevasCalorias);
+}
+

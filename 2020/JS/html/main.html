@@ -16,7 +16,17 @@
 
 <p>saludo con nombre</p>
 <input type="text" id="txtNombre" oninput="saludar()">
-<p id="txtSaludo">Saludo</p>
+<p id="txtSaludo"></p>
+
+<p>calculadora de calorías</p>
+<p>Total:
+    <span id="txtTotal"></span>
+    <p><button onclick="sumarCantidad(-1)">--</button>
+    <button onclick="sumarCantidad(1)">++</button></p>
+    <input type="text" id="calorias" value="50">
+    <p><button onclick="sumarInput()">Sumar</button></p>
+</p>
+
 </body>
 <script type="text/javascript" src="../js/main.js"></script>
 </html>
