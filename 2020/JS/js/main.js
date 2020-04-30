@@ -5,7 +5,7 @@ let variable = 2;
 let variablestr = "String";
 const neuronas = 1;
 
-function saludO(){
+function saludo(){
     alert("HOLA GUAPO");
 }
 
@@ -43,3 +43,11 @@ function sumarInput(){
     sumarCantidad(nuevasCalorias);
 }
 
+//contador de clicks mejorado
+
+let contador = 0;
+function clickear(){
+    contador ++;
+    let valor = document.getElementById("spanContador");
+    valor.innerHTML = contador;
+}
