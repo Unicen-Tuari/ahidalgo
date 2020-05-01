@@ -1,3 +1,36 @@
 nav{
     display: block;
 }
+
+.ulhome{
+    text-align: center;
+    background-color: indigo;
+    padding: 1%;
+}
+
+.home-list{
+    display: inline-block;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1%;
+    text-align: center;
+}
+
+.home-list:hover{
+    font-style: italic;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.home-img-1{
+    width: 150px;
+    height: 50px;
+    margin: -15px;
+    padding: 0px;
+    display: inline-block;
+}
