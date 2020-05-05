@@ -116,3 +116,69 @@ form{
     padding-top: 10px;
     margin-top: -18px;
 }
+
+/* Ver Online */
+
+.div-publi-1{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    background-color: white;
+    width: 15%;
+    height: 500px;
+    margin-left: -235px;
+    margin-right: 10px;
+    float: right;
+}
+
+.div-publi-2{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    background-color: white;
+    width: 15%;
+    height: 500px;
+    margin-left: 10px;
+    margin-right: -235px;
+    float: left;
+}
+
+.texto-publi{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150%;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.div-enlaces{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    width: 50%;
+    height: auto;
+    margin-left: 350px;
+}
+
+.ul-veronline{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 125%;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.titulo-serie{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    margin-top: 15px;
+}
+
+.link:hover{
+    color: black;
+}
