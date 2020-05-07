@@ -29,6 +29,10 @@ h2{
     text-align: center;
 }
 
+.italic{
+    font-style: italic;
+}
+
 
 /* HOME */
 .ulhome{
@@ -158,6 +162,7 @@ form{
     width: 50%;
     height: auto;
     margin-left: 350px;
+    background-color: indigo;
 }
 
 .ul-veronline{
@@ -181,4 +186,20 @@ form{
 
 .link:hover{
     color: black;
+}
+
+/* Curiosidades */
+
+.ul-curios{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: left;
+}
+
+.div-curios{
+    margin-top: 50px;
+    width: 90%;
+    height: auto;
 }
