@@ -99,6 +99,64 @@ a:link, a:visited{
     height: 600px;
 }
 
+.div-intro{
+    border-width: 5px;
+    border-style: dashed;
+    border-color: black;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    opacity: 60%;
+}
+
+.div-intro-2{
+    border-width: 5px;
+    border-style: dashed;
+    border-color: black;
+    background-color: gray;
+    width: 400px;
+    height: 205px;
+    text-align: center;
+}
+
+.boton-intro{
+    font-weight: bold;
+}
+
+.texto-intro-1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+}
+
+.texto-intro-2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 150%;
+    text-align: center;
+}
+
+.texto-intro-3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 175%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.texto-personaje{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 175%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+
 
 /* Contacto */
 .div-form{
@@ -168,6 +226,8 @@ form{
 /* Ver Online */
 
 .div-publi-1{
+    background-image: url(https://i.pinimg.com/236x/46/d6/77/46d677ae7690f9f33ca1abb8bf82f8b8--cherries-vertical.jpg);
+    background-size: 230px 500px;
     border-style: solid;
     border-color: black;
     border-width: 5px;
@@ -180,6 +240,8 @@ form{
 }
 
 .div-publi-2{
+    background-image: url(https://previews.123rf.com/images/goodstudio/goodstudio1705/goodstudio170500199/79176542-cartel-vertical-en-el-tema-de-la-venta-de-verano-caliente-brillante-folleto-publicitario-con-pl%C3%A1tanos-.jpg);
+    background-size: 230px 500px;
     border-style: solid;
     border-color: black;
     border-width: 5px;
