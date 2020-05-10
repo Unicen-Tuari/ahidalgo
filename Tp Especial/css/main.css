@@ -91,7 +91,8 @@ a:link, a:visited{
 }
 
 .boton-intro{
-    font-weight: bold;
+    font: bold 15px 'Segoe UI';
+    margin-top: -5px;
 }
 
 .texto-intro-1{
@@ -231,10 +232,9 @@ td{
 
 /* VER ONLINE */
 .div-publi-1{
-    background-image: url(https://i.pinimg.com/236x/46/d6/77/46d677ae7690f9f33ca1abb8bf82f8b8--cherries-vertical.jpg);
+    background: url(https://i.pinimg.com/236x/46/d6/77/46d677ae7690f9f33ca1abb8bf82f8b8--cherries-vertical.jpg);
     background-size: 230px 500px;
     border: 5px black solid;
-    background-color: white;
     width: 15%;
     height: 500px;
     margin: 0px 10px 0px -235px;
@@ -245,8 +245,7 @@ td{
 .div-publi-2{
     background-image: url(https://previews.123rf.com/images/goodstudio/goodstudio1705/goodstudio170500199/79176542-cartel-vertical-en-el-tema-de-la-venta-de-verano-caliente-brillante-folleto-publicitario-con-pl%C3%A1tanos-.jpg);
     background-size: 230px 500px;
-    border: 5px black solid;
-    background-color: white;
+    border: 5px black solid;;
     width: 15%;
     height: 500px;
     margin: 0px -235px 0px 10px;
