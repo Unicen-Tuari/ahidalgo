@@ -1,61 +1,46 @@
-/* General */
-
+/* GENERAL */
 h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 300%;
+    font : bold 300% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center; 
 }
 
 h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 250%;
+    font : bold 250% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     color: white;
     text-align: center; 
 }
 
 .div-fondo{
     background-color: brown;
-    width: auto;
     height: 652px;
     padding-top: 10px;
-    margin-top: -18px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin: -20px -10px 0px -10px;
 }
 
 .texto-gral{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 150%;
+    font: 150% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
 }
 
-.italic{
+.italic, .home-list:hover{
     font-style: italic;
 }
 
-.ulhome{
+.ulhome{    
     text-align: center;
     background-color: indigo;
     padding: 1%;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin: -10px -10px 20px -10px;
 }
 
 .home-list{
     display: inline-block;
     color: white;
-    font-size: 150%;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 1%;
+    font: bold 150% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
     text-align: center;
-}
-
-.home-list:hover{
-    font-style: italic;
 }
 
 a:link, a:visited{
@@ -66,8 +51,7 @@ a:link, a:visited{
 .home-img-1{
     width: 150px;
     height: 50px;
-    margin: -15px;
-    margin-left: -10px;
+    margin: -15px -15px -15px -10px;
     padding-right: 25px;
     display: inline-block;
 }
@@ -75,45 +59,32 @@ a:link, a:visited{
 .home-img-2{
     width: 150px;
     height: 50px;
-    margin: -15px;
-    margin-right: -10px;
-    padding-left: 30px;
+    margin: -15px -15px -15px -10px;
+    padding-left: 25px;
     display: inline-block;
 }
 
-/* Home */
-
-.titulo-home{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 400%;
-    text-transform: uppercase;
-    color: green;
-}
-
+/* HOME */
 .body-home{
     background-image: url(https://images4.alphacoders.com/837/837215.png);
     background-size: 100% 100%;
     background-position: top;
     background-attachment: fixed;
-    opacity: 100%;
+    opacity: 90%;
     height: 600px;
 }
 
 .div-intro{
-    border-width: 5px;
-    border-style: dashed;
-    border-color: black;
+    background-color: white;
+    border: 5px black dashed;
     width: 400px;
     height: 400px;
-    background-color: white;
     opacity: 60%;
 }
 
 .div-intro-2{
-    border-width: 5px;
-    border-style: dashed;
-    border-color: black;
     background-color: gray;
+    border: 5px black dashed;
     width: 400px;
     height: 205px;
     text-align: center;
@@ -124,73 +95,31 @@ a:link, a:visited{
 }
 
 .texto-intro-1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: bold 200% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    font-weight: bold;
-    font-size: 200%;
     text-align: center;
 }
 
 .texto-intro-2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: bold 150% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    font-size: 150%;
     text-align: center;
 }
 
 .texto-intro-3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: bold 175% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    font-size: 175%;
     text-align: center;
-    font-weight: bold;
 }
 
 .texto-personaje{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: bold 175% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    font-size: 175%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 0px auto 0px;
     text-align: center;
-    font-weight: bold;
 }
 
-
-
-/* Contacto */
-.div-form{
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    height: 360px;
-    width: 50%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: indigo;
-}
-
-form{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 100%;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-}
-
-.div-contacto{
-    background-color: brown;
-    width: auto;
-    height: auto;
-    padding-top: 10px;
-    margin-top: -18px;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-
-/* Creadores */
+/* CREADORES */
 .foto1{
     width: 30%;
     height: 250px;
@@ -207,121 +136,34 @@ form{
 }
 
 .texto-creadores{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 150%;
+    font: 150% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: left;
 }
 
 .fondo-creadores{
     background-color: brown;
-    width: auto;
-    height: auto;
     padding-top: 10px;
-    margin-top: -18px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin: -20px -10px 0px -10px;
 }
 
-/* Ver Online */
-
-.div-publi-1{
-    background-image: url(https://i.pinimg.com/236x/46/d6/77/46d677ae7690f9f33ca1abb8bf82f8b8--cherries-vertical.jpg);
-    background-size: 230px 500px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    background-color: white;
-    width: 15%;
-    height: 500px;
-    margin-left: -235px;
-    margin-right: 10px;
-    float: right;
-    clear: right;
-}
-
-.div-publi-2{
-    background-image: url(https://previews.123rf.com/images/goodstudio/goodstudio1705/goodstudio170500199/79176542-cartel-vertical-en-el-tema-de-la-venta-de-verano-caliente-brillante-folleto-publicitario-con-pl%C3%A1tanos-.jpg);
-    background-size: 230px 500px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    background-color: white;
-    width: 15%;
-    height: 500px;
-    margin-left: 10px;
-    margin-right: -235px;
-    float: left;
-    clear: left;
-}
-
-.texto-publi{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 150%;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-}
-
-.div-enlaces{
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    width: 50%;
-    height: auto;
-    margin-left: 350px;
-    background-color: indigo;
-}
-
-.ul-veronline{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 125%;
-    color: white;
-    text-align: left;
-    font-weight: bold;
-}
-
-.titulo-serie{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 150%;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: -10px;
-    margin-top: 15px;
-}
-
-.link:hover{
-    color: black;
-}
-
-/* Curiosidades */
-
+/* CURIOSIDADES */
 .ul-curios{
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 22px;
+    font: bold 22px'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
 }
 
 .div-curios{
     margin-top: 50px;
     width: 90%;
-    height: auto;
 }
 
-/* Personajes */
-
+/* PERSONAJES */
 .div-fondo-pers{
     background-color: brown;
-    width: auto;
-    height: auto;
     padding-top: 10px;
-    margin-top: -18px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin: -20px -10px 0px -10px;
 }
 
 .nombre-pers{
@@ -332,17 +174,13 @@ form{
 
 .fuente-pers{
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
+    font: bold 40px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     display: inline;
 }
 
 .tabla-pers{
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
+    border: 5px black solid;
     height: 225px;
     margin-bottom: 10px;
 }
@@ -350,23 +188,18 @@ form{
 .img-pers{
     width: 100%;
     height: 225px;
-    margin-bottom: -5px;
-    margin-top: 0px;
+    margin: 0px 0px -5px 0px;
 }
 
 .imagen{
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
+    border: 2px black solid;
     float: left;
 }
 
 table{
     float: left;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    height: 230px
+    border: 1px black solid;
+    height: 230px;
 }
 
 .tabla-head{
@@ -378,25 +211,97 @@ table{
 tr{
     color: white;
     background-color: darkslategray;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font: 25px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 td{
-    border-style: solid;
-    border-color: black;
-    border-width: 2.5px;
+    border: 2.5px black solid;
     text-align: center;
 }
 
 .texto-pers{
-    width: auto;
     text-align: center;
     height: 210px;
 }
 
 .desc-pers{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font: 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+}
+
+/* VER ONLINE */
+.div-publi-1{
+    background-image: url(https://i.pinimg.com/236x/46/d6/77/46d677ae7690f9f33ca1abb8bf82f8b8--cherries-vertical.jpg);
+    background-size: 230px 500px;
+    border: 5px black solid;
+    background-color: white;
+    width: 15%;
+    height: 500px;
+    margin: 0px 10px 0px -235px;
+    float: right;
+    clear: right;
+}
+
+.div-publi-2{
+    background-image: url(https://previews.123rf.com/images/goodstudio/goodstudio1705/goodstudio170500199/79176542-cartel-vertical-en-el-tema-de-la-venta-de-verano-caliente-brillante-folleto-publicitario-con-pl%C3%A1tanos-.jpg);
+    background-size: 230px 500px;
+    border: 5px black solid;
+    background-color: white;
+    width: 15%;
+    height: 500px;
+    margin: 0px -235px 0px 10px;
+    float: left;
+    clear: left;
+}
+
+.texto-publi{
+    font: bold 150% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.div-enlaces{
+    border: 5px black solid;
+    width: 50%;
+    margin-left: 350px;
+    background-color: indigo;
+}
+
+.ul-veronline{
+    font: bold 125% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: left;
+}
+
+.titulo-serie{
+    font: bold 150% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px 0px -10px 0px;
+}
+
+.link:hover{
+    color: black;
+}
+
+/* CONTACTO */
+.div-form{
+    border: 5px black solid;
+    width: 50%;
+    padding: 10px;
+    margin: 0px auto 0px auto;;
+    background-color: indigo;
+}
+
+form{
+    font: bold 100% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.div-contacto{
+    background-color: brown;
+    padding-top: 10px;
+    margin: -20px -10px 0px -10px;
 }
