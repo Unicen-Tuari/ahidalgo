@@ -237,6 +237,7 @@ form{
     margin-left: -235px;
     margin-right: 10px;
     float: right;
+    clear: right;
 }
 
 .div-publi-2{
@@ -251,6 +252,7 @@ form{
     margin-left: 10px;
     margin-right: -235px;
     float: left;
+    clear: left;
 }
 
 .texto-publi{
