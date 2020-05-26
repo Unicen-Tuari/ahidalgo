@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    margin: 20px auto 30px auto;
+}
+
+h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+input, select{
+    width: 40%;
+}
+
+button{
+    margin-bottom: 5px;
+}
+
+.separador1{
+    width: 37%;
+    height: 300px;
+    float: left;
+}
+
+.agregar-personaje{
+    border: 5px black solid;
+    width: 25%;
+    float: left;
+}
+
+.separador2{
+    width: 38%;
+    height: 300px;
+    float: left;
+}
