@@ -1,7 +1,7 @@
 "use strict";
 
 let btn = document.getElementById("generarPers");
-btn.addEventListener("click", mostrarPersonaje);
+btn.addEventListener("mousedown" ,mostrarPersonaje);
 
 const myset = new Set();
 myset.add("Midoriya");
@@ -25,7 +25,8 @@ let numAleatorio = getRandom(0,arrPersonajes.length);
 
 function generarPersonaje(arreglo, numero){
     let resultado = arreglo[numero];
-    document.getElementById("personaje").innerHTML = resultado;
+    let nodoPers = document.getElementById("personaje");
+    nodoPers.innerHTML = resultado;
     return resultado;
 }
 
