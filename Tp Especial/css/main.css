@@ -298,3 +298,49 @@ form{
     padding-top: 10px;
     margin: -20px -10px 0px -10px;
 }
+
+/* MINIJUEGO */
+.div-juego-0{
+    margin-top: 75px;
+}
+
+.div-juego-1{
+    background-color: slategray;
+    border: 5px black dashed;
+    width: 20%;
+    margin: -10px 0px 0px 0px;
+}
+
+.div-juego-2{
+    background-color: slategray;
+    border: 5px black dashed;
+    width: 20%;
+    height: 150px;
+    margin: -10px 0px 0px 0px;
+    font: 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.div-juego-3{
+    background-color: slategray;
+    border: 5px black dashed;
+    width: 20%;
+    height: 100px;
+    margin: -10px 0px 0px 0px;
+}
+
+
+
+.generar-personajes{
+    font: 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 30px 0px 0px 30px;
+}
+
+.generar-batalla{
+    font: 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 35px 0px 0px 100px;
+}
