@@ -348,6 +348,25 @@ form{
     background-color: maroon;
 }
 
+.personaje{
+    font: bold 40px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 150px;
+}
+
+.personaje-vs{
+    font: bold 40px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 250px;
+}
+
+.personaje-resultado{
+    font: bold 40px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 170px;
+    margin-top: 80px;
+}
+
 .generar-personajes{
     font: 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
