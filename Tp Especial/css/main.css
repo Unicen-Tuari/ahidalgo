@@ -337,8 +337,6 @@ form{
     margin: -10px 0px 0px 0px;
 }
 
-.div-batalla-0{ 
-}
 
 .div-batalla-1{
     border: black 5px dashed;
@@ -352,18 +350,20 @@ form{
     font: bold 40px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     margin-left: 150px;
+    text-align: left;
 }
 
 .personaje-vs{
     font: bold 40px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     margin-left: 250px;
+    text-align: left;
 }
 
 .personaje-resultado{
     font: bold 40px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    margin-left: 170px;
+    margin-left: 150px;
     margin-top: 80px;
 }
 

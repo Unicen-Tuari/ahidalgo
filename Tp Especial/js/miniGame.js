@@ -33,6 +33,9 @@ function combate(arreglo1,arreglo2){
     if(arreglo1[1] == arreglo2[1]){
         nodoResultado.innerHTML = "Empate!";
     }
+    if(arreglo1[0] == arreglo2[0]){
+        nodoResultado.innerHTML = "Guerra de clones!";
+    }
 }
 
 function getRandom(min, max){
