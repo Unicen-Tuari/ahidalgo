@@ -8,6 +8,11 @@ btnBatalla.addEventListener("click",resultado);
 
 let arrPers = ["MIDORIYA", "BAKUGO", "TODOROKI", "URARAKA"];
 
+let personaje1 = arrPers[Math.floor(Math.random() * arrPers.length)];
+let personaje2 = arrPers[Math.floor(Math.random() * arrPers.length)];
+
+
+
    let numeroRandom1 = getRandom(1,100);
         let arreglo1 = [personaje1,numeroRandom1];
 
@@ -15,8 +20,8 @@ let arrPers = ["MIDORIYA", "BAKUGO", "TODOROKI", "URARAKA"];
         let arreglo2 = [personaje2,numeroRandom2];
 
 function personajes(){
-    let personaje1 = arrPers[Math.floor(Math.random() * arrPers.length)];
-    let personaje2 = arrPers[Math.floor(Math.random() * arrPers.length)];
+    personaje1 = arrPers[Math.floor(Math.random() * arrPers.length)];
+    personaje2 = arrPers[Math.floor(Math.random() * arrPers.length)];
     nodoPersonajes(personaje1,personaje2);
 }
 
