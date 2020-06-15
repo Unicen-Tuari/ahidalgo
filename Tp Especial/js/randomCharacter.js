@@ -1,7 +1,7 @@
 "use strict";
 
 let btn = document.getElementById("generarPers");
-btn.addEventListener("click", mostrarPersonaje);
+btn.addEventListener("mousedown" ,mostrarPersonaje);
 
 const myset = new Set();
 myset.add("Midoriya");
@@ -11,24 +11,20 @@ myset.add("Todoroki");
 myset.add("Uraraka");
 myset.add("Jiro");
 
-console.log(myset);
-
 let arrPersonajes = Array.from(myset);
-    console.log(arrPersonajes);
 
 function getRandom(min, max){
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-let numAleatorio = getRandom(0,arrPersonajes.length);
-   console.log(numAleatorio);
-
 function generarPersonaje(arreglo, numero){
     let resultado = arreglo[numero];
-    document.getElementById("personaje").innerHTML = resultado;
+    let nodoPers = document.getElementById("personaje");
+    nodoPers.innerHTML = resultado;
     return resultado;
 }
 
 function mostrarPersonaje(){
+    let numAleatorio = getRandom(0,arrPersonajes.length);
     generarPersonaje(arrPersonajes,numAleatorio);
 }
