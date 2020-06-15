@@ -11,14 +11,6 @@ let arrPers = ["MIDORIYA", "BAKUGO", "TODOROKI", "URARAKA"];
 let personaje1 = arrPers[Math.floor(Math.random() * arrPers.length)];
 let personaje2 = arrPers[Math.floor(Math.random() * arrPers.length)];
 
-
-
-   let numeroRandom1 = getRandom(1,100);
-        let arreglo1 = [personaje1,numeroRandom1];
-
-    let numeroRandom2 = getRandom(1,100);
-        let arreglo2 = [personaje2,numeroRandom2];
-
 function personajes(){
     personaje1 = arrPers[Math.floor(Math.random() * arrPers.length)];
     personaje2 = arrPers[Math.floor(Math.random() * arrPers.length)];
@@ -54,5 +46,10 @@ function getRandom(min, max){
 }
 
 function resultado(){
+    let numeroRandom1 = getRandom(1,100);
+        let arreglo1 = [personaje1,numeroRandom1];
+
+    let numeroRandom2 = getRandom(1,100);
+        let arreglo2 = [personaje2,numeroRandom2];
     combate(arreglo1,arreglo2);
 }
