@@ -15,6 +15,4 @@ function verOnline(){
 
 return $online;
 }
-
-    echo verOnline();
 ?>

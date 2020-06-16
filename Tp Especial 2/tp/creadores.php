@@ -16,5 +16,4 @@ function creadores(){
 return $creators;
 }
 
-    echo creadores();
 ?>

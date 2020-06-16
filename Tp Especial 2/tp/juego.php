@@ -16,5 +16,4 @@ function juego(){
 return $game;
 }
 
-    echo juego();
 ?>

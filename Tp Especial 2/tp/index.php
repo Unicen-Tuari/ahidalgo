@@ -16,5 +16,4 @@ function index(){
 return $indice;
 }
 
-    echo index();
 ?>

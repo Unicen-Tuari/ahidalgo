@@ -16,5 +16,4 @@ function curiosidades(){
 return $curios;
 }
 
-    echo curiosidades();
 ?>

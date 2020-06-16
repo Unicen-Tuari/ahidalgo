@@ -16,5 +16,4 @@ function personajes(){
 return $pers;
 }
 
-    echo personajes();
 ?>

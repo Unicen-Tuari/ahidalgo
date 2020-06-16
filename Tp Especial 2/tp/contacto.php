@@ -16,5 +16,4 @@ function contacto(){
 return $contact;
 }
 
-    echo contacto();
 ?>
