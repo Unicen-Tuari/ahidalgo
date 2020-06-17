@@ -1,7 +1,8 @@
 <?php
-
+include_once "database.php";
 function personajes(){
-    $pers = '<!DOCTYPE html>
+?>
+    <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -34,9 +35,17 @@ function personajes(){
         </p>
     
         <div class="nombre-pers">
-            <p class="fuente-pers">Izuku Midoriya</p>
+        <?php
+  $personajes = obtenerPersonajes();
+  foreach ($personajes as $personaje){
+    ?>
+<p class="fuente-pers"><?php echo $personaje['nombre_personaje']; ?></p>
+
+<?php
+}
+?>
+
         </div>
-    
         <div class="tabla-pers">
             <div class="imagen">
             <img src="./img/personaje1.jpg" alt="Izuku Midoriya" class="img-pers">
@@ -167,9 +176,8 @@ function personajes(){
     
     </div>
     </body>
-    </html>';
+    </html>
 
-return $pers;
+<?php
 }
-
 ?>
