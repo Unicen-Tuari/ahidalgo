@@ -1,10 +1,23 @@
 <?php
 
-function obtenerPersonajes(){
-    $db = new PDO('mysql:host=localhost;'.'dbname=personaje;charset=utf8', 'root', '');
-    $sentencia = $db->prepare( "select * from personajes");
+function getCharacters(){
+    $db = new PDO('mysql:host=localhost;'.'dbname=characters;charset=utf8', 'root', '');
+    $sentencia = $db->prepare( "select * from _character");
     $sentencia ->execute();
     return $sentencia->fetchAll();
+}
+
+function getCharacterName(){
+    $db = new PDO('mysql:host=localhost;'.'dbname=characters;charset=utf8', 'root', '');
+    $sentencia = $db->prepare( "select name from _character");
+    $sentencia ->execute();
+    return $sentencia->fetchAll();
+}
+
+function createCharacter(){
+    $db = new PDO('mysql:host=localhost;'.'dbname=characters;charset=utf8', 'root', '');
+    $sentencia = $db->prepare( "INSERT INTO _character(name, fk_bloodtype, description) VALUES (?,?,?)");
+    $sentencia ->execute(array($_GET['name'], $_GET['bloodtype'], $_GET['description']));
 }
 
 ?>

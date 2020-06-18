@@ -36,10 +36,10 @@ function personajes(){
     
         <div class="nombre-pers">
         <?php
-  $personajes = obtenerPersonajes();
+  $personajes = getCharacterName();
   foreach ($personajes as $personaje){
     ?>
-<p class="fuente-pers"><?php echo $personaje['nombre_personaje']; ?></p>
+<p class="fuente-pers"><?php print_r($personaje['name']); ?></p>
 
 <?php
 }

@@ -5,13 +5,11 @@ function admin(){
     <!doctype html>
     <html lang="en">
       <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Bootstrap CSS -->
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
+
         <title>Boku No Heroz - Admin</title>
       </head>
       <body>
@@ -22,16 +20,41 @@ function admin(){
   <ul class="list-group">
 
   <?php
-  $personajes = obtenerPersonajes();
+  $personajes = getCharacters();
   foreach ($personajes as $personaje){
     ?>
-<li class="list-group-item"><?php echo $personaje['nombre_personaje']; ?></li>
+<li class="list-group-item"><?php echo $personaje['name']; ?></li>
 
 <?php
 }
 ?>
   </ul>
   </div>
+
+  <h3>Agregar Personaje</h3>
+
+  <form action ="newCharacter" method="GET">
+  <div class="div-personajes">
+    <label for="exampleFormControlInput1">Nombre Personaje</label>
+    <input type="text" class="form-control" id="name" name="name">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Tipo de Sangre</label>
+    <select class="form-control" id="bloodtype" name="bloodtype">
+      <option>0</option>
+      <option>A</option>
+      <option>B</option>
+      <option>AB</option>
+    </select>
+    <p></p>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Descripcion</label>
+    <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+  </div>
+  <input class="btn btn-primary" type="submit" value="Agregar">
+</form>
+
     
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -41,5 +64,13 @@ function admin(){
       </body>
     </html>
 <?php
+}
+
+function newCharacter(){
+  echo "funciona!";
+  print_r($_GET);
+
+  createCharacter();
+  header("location: /tp/admin");
 }
 ?>
