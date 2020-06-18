@@ -12,7 +12,7 @@
         'veronline' => 'verOnline',
         'juego' => 'juego',
         'admin' => 'admin',
-        'agregarPersonaje' => 'newCharacter'
+        'newCharacter' => 'newCharacter'
     ];
 }
 

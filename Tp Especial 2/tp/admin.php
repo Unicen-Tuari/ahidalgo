@@ -33,8 +33,8 @@ function admin(){
 
   <h3>Agregar Personaje</h3>
 
-  <form action ="newCharacter" method="GET">
-  <div class="div-personajes">
+  <form action ="newCharacter" method="get">
+  <div class="form-group">
     <label for="exampleFormControlInput1">Nombre Personaje</label>
     <input type="text" class="form-control" id="name" name="name">
   </div>
@@ -67,9 +67,6 @@ function admin(){
 }
 
 function newCharacter(){
-  echo "funciona!";
-  print_r($_GET);
-
   createCharacter();
   header("location: /tp/admin");
 }
