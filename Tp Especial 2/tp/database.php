@@ -2,7 +2,7 @@
 
 function getCharacters(){
     $db = new PDO('mysql:host=localhost;'.'dbname=characters;charset=utf8', 'root', '');
-    $sentencia = $db->prepare( "select * from _character");
+    $sentencia = $db->prepare( "select name, description, fk_bloodtype from _character");
     $sentencia ->execute();
     return $sentencia->fetchAll();
 }

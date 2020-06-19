@@ -12,14 +12,27 @@
       <p></p>
         <h1>Bienvenido al sitio de administracion de Boku No Heroz!</h1>
         <h3>Lista de Personajes</h3>
-<div>
-  <ul class="list-group">
-  {foreach from=$personajes item=personaje}
-<li class="list-group-item">{$personaje['name']}</li>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Descripcion</th>
+      <th scope="col">Tipo De Sangre</th>
+    </tr>
+  </thead>
+  <tbody>
+  <pre>
+  {print_r($personajes)}
+  </pre>
+  {foreach $personajes item=personaje}
+    <tr>
+    <td>{print_r($personaje['name'])}</td>
+    <td>{print_r($personaje['description'])}</td>
+    <td>{print_r($personaje['fk_bloodtype'])}</td>
+    </tr>
 {/foreach}
-
-  </ul>
-  </div>
+  </tbody>
+</table>
 
   <h3>Agregar Personaje</h3>
 
