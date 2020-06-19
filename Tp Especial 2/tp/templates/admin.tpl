@@ -21,14 +21,13 @@
     </tr>
   </thead>
   <tbody>
-  <pre>
-  {print_r($personajes)}
-  </pre>
   {foreach $personajes item=personaje}
-    <tr>
-    <td>{print_r($personaje['name'])}</td>
-    <td>{print_r($personaje['description'])}</td>
-    <td>{print_r($personaje['fk_bloodtype'])}</td>
+    <tr>    
+    <td>{$personaje['name']}</td>
+    <td>{$personaje['description']}</td>
+    <td>{$personaje['fk_bloodtype']}</td>
+    <td><button type="button" class="btn btn-link">Editar</button></td>
+    <td><button type="button" class="btn btn-link"><a href="deleteCharacter/{$personaje['id_character']}">Eliminar</a></button></td>
     </tr>
 {/foreach}
   </tbody>

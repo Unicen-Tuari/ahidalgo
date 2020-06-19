@@ -13,4 +13,13 @@ function newCharacter(){
   header("location: /tp/admin");
 }
 
+function deleteCharacter($params){
+  removeCharacter($params[0]);
+  $personajes = getCharacters();
+  $smarty= new Smarty();
+  $smarty->assign('personajes', $personajes);  
+  $smarty->display('templates/admin.tpl');
+  header("location: /tp/admin");
+}
+
 ?>

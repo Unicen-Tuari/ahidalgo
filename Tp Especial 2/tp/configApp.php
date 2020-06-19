@@ -12,7 +12,8 @@
         'veronline' => 'verOnline',
         'juego' => 'juego',
         'admin' => 'admin',
-        'newCharacter' => 'newCharacter'
+        'newCharacter' => 'newCharacter',
+        'deleteCharacter' => 'deleteCharacter'
     ];
 }
 
