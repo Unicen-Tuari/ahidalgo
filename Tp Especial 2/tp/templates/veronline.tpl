@@ -39,5 +39,4 @@
     </div>
             <img src="./img/publi3.jpg" alt="publicidad" class="img-publi-2">
     </div>
-    </body>
-    </html>
+{include file="footer.tpl"}

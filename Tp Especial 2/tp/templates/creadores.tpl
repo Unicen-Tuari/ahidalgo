@@ -63,5 +63,4 @@
                 mollit anim id est laborum
                 </p>
         </div>
-    </body>
-    </html>
+{include file="footer.tpl"}

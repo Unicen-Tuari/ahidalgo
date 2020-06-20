@@ -16,6 +16,10 @@
     <tr>
       <th scope="col">Nombre</th>
       <th scope="col">Descripcion</th>
+      <th scope="col">Nombre De Heroe</th>
+      <th scope="col">Fecha Nacimiento</th>
+      <th scope="col">Altura</th>
+      <th scope="col">Quirk</th>
       <th scope="col">Tipo De Sangre</th>
     </tr>
   </thead>
@@ -24,6 +28,7 @@
     <tr>    
     <td>{$personaje['name']}</td>
     <td>{$personaje['description']}</td>
+    <td>{$personaje['hero_name']}</td>
     <td>{$personaje['fk_bloodtype']}</td>
     <td><button type="button" class="btn btn-link"><a href="deleteCharacter/{$personaje['id_character']}">Eliminar</a></button></td>
     </tr>

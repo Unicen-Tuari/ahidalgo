@@ -62,5 +62,4 @@
     </div>
     </div>
     <script src="./js/miniGame.js"></script>
-    </body>
-    </html>
+{include file="footer.tpl"}

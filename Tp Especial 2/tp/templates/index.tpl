@@ -40,5 +40,4 @@
     </div>
     
     <script src="./js/randomCharacter.js"></script>
-    </body>
-    </html>
+{include file="footer.tpl"}

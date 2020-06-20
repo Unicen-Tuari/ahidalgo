@@ -22,13 +22,12 @@
             historias, fotos y estadísticas de los mismos. Si consideras una buena idea que agreguemos
              ciertos detalles en esta sección, háznoslo saber en la sección de contacto.
         </p>
-    
-        <div class="nombre-pers">
 
-{foreach $personajes item=personaje}
-<p class="fuente-pers">{$personaje[1]}</p>
+   {foreach $personajes item=personaje} 
+        <div class="nombre-pers">
+<p class="fuente-pers">{$personaje['name']}</p>
         </div>
-        {/foreach}
+
         <div class="tabla-pers">
             <div class="imagen">
             <img src="./img/personaje1.jpg" alt="Izuku Midoriya" class="img-pers">
@@ -38,125 +37,32 @@
                 <tbody>
                     <tr>
                         <td class="tabla-head">Nombre De Héroe</td>
-                        <td>Deku</td>
+                        <td>{$personaje['hero_name']}</td>
                     </tr>
                     <tr>
                         <td class="tabla-head">Fecha De Nacimiento</td>
-                        <td>15 de Julio</td>
+                        <td>{$personaje['birthday']}</td>
                     </tr>
                     <tr>
                         <td class="tabla-head">Altura</td>
-                        <td>166cm</td>
+                        <td>{$personaje['height']}</td>
                     </tr>
                     <tr>
                         <td class="tabla-head">Quirk</td>
-                        <td>One For All</td>
+                        <td>{$personaje['quirk']}</td>
                     </tr>
                     <tr>
                         <td class="tabla-head">Tipo de Sangre</td>
-                        <td>0</td>
+                        <td>{$personaje['fk_bloodtype']}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
             <div class="texto-pers">
-                <p class="desc-pers">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                mollit anim id est laborum</p>
+                <p class="desc-pers">{$personaje['description']}</p>
             </div>
         </div>
-    
-        <div class="nombre-pers">
-            <p class="fuente-pers">Katsuki Bakugo</p>
-        </div>
-    
-        <div class="tabla-pers">
-            <div class="imagen">
-            <img src="./img/personaje2.jpg" alt="Katsuki Bakugo" class="img-pers">
-            </div>
-            <div>
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="tabla-head">Nombre De Héroe</td>
-                        <td>Ground Zero</td>
-                    </tr>
-                    <tr>
-                        <td class="tabla-head">Fecha De Nacimiento</td>
-                        <td>20 de Abril</td>
-                    </tr>
-                    <tr>
-                        <td class="tabla-head">Altura</td>
-                        <td>172cm</td>
-                    </tr>
-                    <tr>
-                        <td class="tabla-head">Quirk</td>
-                        <td>Explosión</td>
-                    </tr>
-                    <tr>
-                        <td class="tabla-head">Tipo de Sangre</td>
-                        <td>A</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-            <div class="texto-pers">
-                <p class="desc-pers">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                mollit anim id est laborum</p>
-            </div>
-        </div>
-    
-        <div class="nombre-pers">
-            <p class="fuente-pers">Ochaco Uraraka</p>
-        </div>
-    
-        <div class="tabla-pers">
-            <div class="imagen">
-            <img src="./img/personaje3.jpg" alt="Ochaco Uraraka" class="img-pers">
-            </div>
-            <div>
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="tabla-head">Nombre De Héroe</td>
-                        <td>Uravity</td>
-                    </tr>
-                    <tr>
-                        <td class="tabla-head">Fecha De Nacimiento</td>
-                        <td>27 de Diciembre</td>
-                    </tr>
-                    <tr>
-                        <td class="tabla-head">Altura</td>
-                        <td>156cm</td>
-                    </tr>
-                    <tr>
-                        <td class="tabla-head">Quirk</td>
-                        <td>Gravedad</td>
-                    </tr>
-                    <tr>
-                        <td class="tabla-head">Tipo de Sangre</td>
-                        <td>B</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-            <div class="texto-pers">
-                <p class="desc-pers">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                mollit anim id est laborum</p>
-            </div>
-        </div>
+        {/foreach}    
     
     </div>
-    </body>
-    </html>
+{include file="footer.tpl"}
