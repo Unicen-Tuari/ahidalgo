@@ -30,7 +30,7 @@
 
         <div class="tabla-pers">
             <div class="imagen">
-            <img src="./img/personaje1.jpg" alt="Izuku Midoriya" class="img-pers">
+            <img src="./img/no_disponible.jpg" alt="Izuku Midoriya" class="img-pers">
             </div>
             <div>
             <table>

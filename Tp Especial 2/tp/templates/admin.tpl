@@ -29,6 +29,9 @@
     <td>{$personaje['name']}</td>
     <td>{$personaje['description']}</td>
     <td>{$personaje['hero_name']}</td>
+    <td>{$personaje['birthday']}</td>
+    <td>{$personaje['height']}</td>
+    <td>{$personaje['quirk']}</td>
     <td>{$personaje['fk_bloodtype']}</td>
     <td><button type="button" class="btn btn-link"><a href="deleteCharacter/{$personaje['id_character']}">Eliminar</a></button></td>
     </tr>
@@ -56,6 +59,22 @@
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Descripcion</label>
     <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nombre de Heroe</label>
+    <input type="text" class="form-control" id="hero_name" name="hero_name">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Fecha de nacimiento</label>
+    <input type="text" class="form-control" id="birthday" name="birthday">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Altura</label>
+    <input type="text" class="form-control" id="height" name="height">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Quirk</label>
+    <input type="text" class="form-control" id="quirk" name="quirk">
   </div>
   <input class="btn btn-primary" type="submit" value="Agregar">
 </form>
