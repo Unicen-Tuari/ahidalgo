@@ -1,4 +1,7 @@
 {include file="header.tpl"}
+    <body>
+        <div>
+            <nav>
 <ul class="ulhome">
     <img src="./img/home1.png" class="home-img-1" alt="Logo">    
     <li class="home-list"><a href="../tp/home">HOME</a></li>

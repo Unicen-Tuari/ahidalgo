@@ -33,4 +33,30 @@ function personajes(){
   $smarty->assign('personajes', $personajes);
   $smarty->display('templates/personajes.tpl');
 }
+
+function creadores(){
+  $smarty= new Smarty();
+  $smarty->display('templates/creadores.tpl');
+}
+
+function juego(){
+  $smarty= new Smarty();
+  $smarty->display('templates/juego.tpl');
+}
+
+function curiosidades(){
+  $smarty= new Smarty();
+  $smarty->display('templates/curiosidades.tpl');
+}
+
+function index(){
+  $smarty= new Smarty();
+  $smarty->display('templates/index.tpl');
+}
+
+function veronline(){
+  $smarty= new Smarty();
+  $smarty->display('templates/veronline.tpl');
+}
+
 ?>

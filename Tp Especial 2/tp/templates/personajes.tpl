@@ -1,5 +1,7 @@
 {include file="header.tpl"}
-
+    <body>
+        <div>
+            <nav>
 <ul class="ulhome">
                 <img src="./img/home1.png" class="home-img-1" alt="Logo">    
                 <li class="home-list"><a href="../tp/home">HOME</a></li>
@@ -22,8 +24,9 @@
         </p>
     
         <div class="nombre-pers">
+
 {foreach $personajes item=personaje}
-<p class="fuente-pers">{$personaje['name']}</p>
+<p class="fuente-pers">{$personaje[1]}</p>
         </div>
         {/foreach}
         <div class="tabla-pers">

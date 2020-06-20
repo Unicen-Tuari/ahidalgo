@@ -9,7 +9,7 @@
         'contacto' => 'contacto',
         'creadores' => 'creadores',
         'curiosidades' => 'curiosidades',
-        'veronline' => 'verOnline',
+        'veronline' => 'veronline',
         'juego' => 'juego',
         'admin' => 'admin',
         'newCharacter' => 'newCharacter',
