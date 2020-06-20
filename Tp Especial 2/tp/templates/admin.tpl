@@ -1,16 +1,52 @@
-<!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-        <title>Boku No Heroz - Admin</title>
-      </head>
+{include file="admin_header.tpl"}
       <body>
-      <p></p>
         <h1>Bienvenido al sitio de administracion de Boku No Heroz!</h1>
-        <h3>Lista de Personajes</h3>
+        
+  <h3>Agregar Personaje</h3>
+  <div class="div-character-1">
+  <form action ="newCharacter" method="get">
+  <div class="form-group-1">
+    <label for="exampleFormControlInput1">Nombre Personaje</label>
+    <input type="text" class="form-control" id="name" name="name">
+  </div>
+  <div class="form-group-1">
+    <label for="exampleFormControlSelect1">Tipo de Sangre</label>
+    <select class="form-control" id="bloodtype" name="bloodtype">
+      <option>0</option>
+      <option>A</option>
+      <option>B</option>
+      <option>AB</option>
+    </select>
+    <p></p>
+  </div>
+  <div class="form-group-1">
+    <label for="exampleFormControlTextarea1">Descripcion</label>
+    <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+  </div>
+</div>
+<div class="div-character-2">
+
+  <div class="form-group-2">
+    <label for="exampleFormControlInput1">Nombre de Heroe</label>
+    <input type="text" class="form-control" id="hero_name" name="hero_name">
+  </div>
+  <div class="form-group-2">
+    <label for="exampleFormControlInput1">Fecha de nacimiento</label>
+    <input type="text" class="form-control" id="birthday" name="birthday">
+  </div>
+  <div class="form-group-2">
+    <label for="exampleFormControlInput1">Altura</label>
+    <input type="text" class="form-control" id="height" name="height">
+  </div>
+  <div class="form-group-2">
+    <label for="exampleFormControlInput1">Quirk</label>
+    <input type="text" class="form-control" id="quirk" name="quirk">
+  </div>
+</div>
+  <input class="btn btn-primary" type="submit" value="Agregar">
+</form>
+
+<h3>Lista de Personajes</h3>
 <table class="table">
   <thead>
     <tr>
@@ -36,48 +72,4 @@
     <td><button type="button" class="btn btn-link"><a href="deleteCharacter/{$personaje['id_character']}">Eliminar</a></button></td>
     </tr>
 {/foreach}
-  </tbody>
-</table>
-
-  <h3>Agregar Personaje</h3>
-
-  <form action ="newCharacter" method="get">
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Nombre Personaje</label>
-    <input type="text" class="form-control" id="name" name="name">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Tipo de Sangre</label>
-    <select class="form-control" id="bloodtype" name="bloodtype">
-      <option>0</option>
-      <option>A</option>
-      <option>B</option>
-      <option>AB</option>
-    </select>
-    <p></p>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Descripcion</label>
-    <textarea class="form-control" id="description" name="description" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Nombre de Heroe</label>
-    <input type="text" class="form-control" id="hero_name" name="hero_name">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Fecha de nacimiento</label>
-    <input type="text" class="form-control" id="birthday" name="birthday">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Altura</label>
-    <input type="text" class="form-control" id="height" name="height">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Quirk</label>
-    <input type="text" class="form-control" id="quirk" name="quirk">
-  </div>
-  <input class="btn btn-primary" type="submit" value="Agregar">
-</form>
-   
-</body>
-</html>
+{include file="footer.tpl"}

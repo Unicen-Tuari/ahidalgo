@@ -1,5 +1,6 @@
 {include file="header.tpl"}
     <body>
+        <div>
 {include file="navbar.tpl"}
 
     <div class="div-fondo-pers">
