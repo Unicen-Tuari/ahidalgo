@@ -27,7 +27,7 @@
   {foreach $personajes item=personaje}
     <tr>    
     <td>{$personaje['name']}</td>
-    <td>{$personaje['description']}</td>
+    <td>{$personaje['description']|truncate:10}</td>
     <td>{$personaje['hero_name']}</td>
     <td>{$personaje['birthday']}</td>
     <td>{$personaje['height']}</td>
