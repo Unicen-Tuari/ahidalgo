@@ -1,20 +1,8 @@
 {include file="header.tpl"}
     <body>
         <div>
-            <nav>
-<ul class="ulhome">
-                <img src="./img/home1.png" class="home-img-1" alt="Logo">    
-                <li class="home-list"><a href="../tp/home">HOME</a></li>
-                <li class="home-list"><a href="../tp/creadores">CREADORES</a></li>
-                <li class="home-list"><a href="../tp/personajes">PERSONAJES</a></li>
-                <li class="home-list"><a href="../tp/curiosidades">CURIOSIDADES</a></li>
-                <li class="home-list"><a href="../tp/veronline">VER ONLINE</a></li>
-                <li class="home-list"><a href="../tp/contacto">CONTACTANOS</a></li>
-                <li class="home-list"><a href="../tp/juego">JUEGO</a></li>
-                <img src="./img/home1.png" class="home-img-2" alt="Logo">
-                </ul>
-            </nav>
-        </div>
+{include file="navbar.tpl"}
+
     <div class="div-fondo-pers">
         <h1>PERSONAJES</h1>
         <p class="texto-gral">
@@ -25,7 +13,7 @@
 
    {foreach $personajes item=personaje} 
         <div class="nombre-pers">
-<p class="fuente-pers">{$personaje['name']}</p>
+<p class="fuente-pers">{$personaje['name']|capitalize}</p>
         </div>
 
         <div class="tabla-pers">
@@ -37,23 +25,23 @@
                 <tbody>
                     <tr>
                         <td class="tabla-head">Nombre De Héroe</td>
-                        <td>{$personaje['hero_name']}</td>
+                        <td>{$personaje['hero_name']|capitalize}</td>
                     </tr>
                     <tr>
                         <td class="tabla-head">Fecha De Nacimiento</td>
-                        <td>{$personaje['birthday']}</td>
+                        <td>{$personaje['birthday']|capitalize}</td>
                     </tr>
                     <tr>
                         <td class="tabla-head">Altura</td>
-                        <td>{$personaje['height']}</td>
+                        <td>{$personaje['height']|capitalize}</td>
                     </tr>
                     <tr>
                         <td class="tabla-head">Quirk</td>
-                        <td>{$personaje['quirk']}</td>
+                        <td>{$personaje['quirk']|capitalize}</td>
                     </tr>
                     <tr>
                         <td class="tabla-head">Tipo de Sangre</td>
-                        <td>{$personaje['fk_bloodtype']}</td>
+                        <td>{$personaje['fk_bloodtype']|capitalize}</td>
                     </tr>
                 </tbody>
             </table>
