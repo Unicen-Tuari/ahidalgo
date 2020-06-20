@@ -1,6 +1,6 @@
 {include file="admin_header.tpl"}
       <body>
-        <h1>Bienvenido al sitio de administracion de Boku No Heroz!</h1>
+        <h1>Boku No Heroz - Administracion</h1>
         
   <h3>Agregar Personaje</h3>
   <div class="div-character-1">
