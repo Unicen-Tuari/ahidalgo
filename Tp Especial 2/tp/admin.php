@@ -22,4 +22,15 @@ function deleteCharacter($params){
   header("location: /tp/admin");
 }
 
+function contacto(){
+  $smarty= new Smarty();
+  $smarty->display('templates/contacto.tpl');
+}
+
+function personajes(){
+  $personajes = getCharacters();
+  $smarty= new Smarty();
+  $smarty->assign('personajes', $personajes);
+  $smarty->display('templates/personajes.tpl');
+}
 ?>

@@ -4,7 +4,6 @@ require_once "configApp.php";
 
 require_once "index.php";
 require_once "characters.php";
-require_once "contacto.php";
 require_once "creadores.php";
 require_once "curiosidades.php";
 require_once "indexOnline.php";
