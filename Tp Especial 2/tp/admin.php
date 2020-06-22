@@ -15,11 +15,12 @@ function newCharacter(){
 
 function deleteCharacter($params){
   removeCharacter($params[0]);
+  header("location: /tp/admin");
   $personajes = getCharacters();
   $smarty= new Smarty();
   $smarty->assign('personajes', $personajes);  
   $smarty->display('templates/admin.tpl');
-  header("location: /tp/admin");
+
 }
 
 function contacto(){
