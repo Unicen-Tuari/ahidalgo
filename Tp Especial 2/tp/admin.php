@@ -1,46 +1,39 @@
 <?php
 require_once "database.php";
 require_once "libs/Smarty.class.php";
-function admin(){
+
+/*function admin(){
   $personajes = getCharacters();
   $smarty= new Smarty();
   $smarty->assign('personajes', $personajes);
   $smarty->display('templates/admin.tpl');
-}
+} */
 
-function newCharacter(){
+/*function newCharacter(){
   createCharacter();
   header("location: /tp/admin");
-}
+} */
 
-function deleteCharacter($params){
+/*function deleteCharacter($params){
   removeCharacter($params[0]);
   header("location: /tp/admin");
   $personajes = getCharacters();
   $smarty= new Smarty();
   $smarty->assign('personajes', $personajes);  
   $smarty->display('templates/admin.tpl');
+} */
 
-}
-
-function contacto(){
+/*function contacto(){
   $smarty= new Smarty();
   $smarty->display('templates/contacto.tpl');
-}
+} */
 
-function personajes(){
-  $personajes = getCharacters();
-  $smarty= new Smarty();
-  $smarty->assign('personajes', $personajes);
-  $smarty->display('templates/personajes.tpl');
-}
-
-function creadores(){
+/*function creadores(){
   $smarty= new Smarty();
   $smarty->display('templates/creadores.tpl');
-}
+} */
 
-function juego(){
+/*function juego(){
   $smarty= new Smarty();
   $smarty->display('templates/juego.tpl');
 }
@@ -50,14 +43,22 @@ function curiosidades(){
   $smarty->display('templates/curiosidades.tpl');
 }
 
-function index(){
+/*function index(){
   $smarty= new Smarty();
   $smarty->display('templates/index.tpl');
-}
+} */
 
-function veronline(){
+/*function veronline(){
   $smarty= new Smarty();
   $smarty->display('templates/veronline.tpl');
 }
+
+/*function personajes(){
+  $personajes = getCharacters();
+  $smarty= new Smarty();
+  $smarty->assign('personajes', $personajes);
+  $smarty->display('templates/personajes.tpl');
+} */
+
 
 ?>

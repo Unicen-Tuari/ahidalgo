@@ -4,16 +4,16 @@
     public static $ACTION = "action";
     public static $PARAMS = "params";
     public static $ACTIONS = [
-        'home' => 'index',
-        'personajes' => 'personajes',
-        'contacto' => 'contacto',
-        'creadores' => 'creadores',
-        'curiosidades' => 'curiosidades',
-        'veronline' => 'veronline',
-        'juego' => 'juego',
-        'admin' => 'admin',
-        'newCharacter' => 'newCharacter',
-        'deleteCharacter' => 'deleteCharacter'
+        'home' => 'characterController#index',
+        'personajes' => 'characterController#personajes',
+        'contacto' => 'characterController#contacto',
+        'creadores' => 'characterController#creadores',
+        'curiosidades' => 'characterController#curiosidades',
+        'veronline' => 'characterController#veronline',
+        'juego' => 'characterController#juego',
+        'admin' => 'characterController#admin',
+        'newCharacter' => 'characterController#newCharacter',
+        'deleteCharacter' => 'characterController#deleteCharacter'
     ];
 }
 

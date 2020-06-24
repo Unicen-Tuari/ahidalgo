@@ -60,6 +60,7 @@
     </tr>
   </thead>
   <tbody>
+
   {foreach $personajes item=personaje}
     <tr>    
     <td>{$personaje['name']}</td>
@@ -69,7 +70,10 @@
     <td>{$personaje['height']}</td>
     <td>{$personaje['quirk']}</td>
     <td>{$personaje['fk_bloodtype']}</td>
-    <td><button type="button" class="btn btn-link"><a href="deleteCharacter/{$personaje['id_character']}">Eliminar</a></button></td>
+    {$var = $personaje['id_character']}
+    <td><button type="button" class="btn btn-link"><a href="deleteCharacter/{$var}">Eliminar</a></button></td>
     </tr>
 {/foreach}
+    </tbody>
+    </table>
 {include file="footer.tpl"}
