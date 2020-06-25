@@ -1,6 +1,6 @@
 <?php
-require_once "database.php";
-require_once "libs/Smarty.class.php";
+// require_once "database.php";
+// require_once "libs/Smarty.class.php";
 
 /*function admin(){
   $personajes = getCharacters();

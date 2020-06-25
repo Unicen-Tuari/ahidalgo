@@ -1,11 +1,13 @@
 <?php
+
 require_once "characterController.php";
 require_once "characterView.php";
+
 class characterModel{
 
     private $db;
     
-    function _construct(){
+    function __construct(){
         $this->db = new PDO('mysql:host=localhost;'.'dbname=characters;charset=utf8', 'root', '');
     }
 

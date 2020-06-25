@@ -7,7 +7,7 @@ require_once "characterModel.php";
 class characterView{
     private $smarty;
 
-    function _construct(){
+    function __construct(){
         $this->smarty = new Smarty;
     }
 

@@ -8,7 +8,7 @@ class characterController{
     private $view;
     private $model;
 
-    function _construct(){
+    function __construct(){
         $this->view = new characterView();
         $this->model = new characterModel();
     }

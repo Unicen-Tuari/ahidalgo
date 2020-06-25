@@ -1,7 +1,6 @@
 <?php
 
 require_once "configApp.php";
-require_once "admin.php";
 require_once "characterController.php";
 require_once "characterModel.php";
 require_once "characterView.php";
@@ -18,11 +17,12 @@ return $arrayReturn;
 
 $urlData = parseUrl($_GET[configApp::$ACTION]);
 $actionName = $urlData[configApp::$ACTION];
+$actions = configApp::$ACTIONS;
 
-if(array_key_exists($actionName,configApp::$ACTIONS)){
+if(array_key_exists($actionName,$actions)){
+
     $params = $urlData[configApp::$PARAMS];
-
-    $controllerMetodo = explode('#' , configApp::$ACTIONS[$actionName]); // characterController#index en configApp.php
+    $controllerMetodo = explode('#' , $actions[$actionName]); // characterController#index en configApp.php
     $controller = new $controllerMetodo[0]; // characterController en configApp.php
     $methodName = $controllerMetodo[1];// index, personajes, etc. en configApp.php
 
