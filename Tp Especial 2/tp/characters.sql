@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-06-2020 a las 15:24:51
+-- Tiempo de generación: 25-06-2020 a las 19:49:32
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -45,13 +45,52 @@ INSERT INTO `bloodtype` (`id_blood`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `section`
+--
+
+CREATE TABLE `section` (
+  `name_section` varchar(100) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Volcado de datos para la tabla `section`
+--
+
+INSERT INTO `section` (`name_section`) VALUES
+('home'),
+('creadores'),
+('personajes'),
+('curiosidades'),
+('veronline'),
+('contáctanos'),
+('juego');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `user`
+--
+
+CREATE TABLE `user` (
+  `id_user` int(11) NOT NULL,
+  `email` varchar(150) COLLATE utf8_bin NOT NULL,
+  `password` varchar(150) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `_character`
 --
 
 CREATE TABLE `_character` (
-  `id_character` int(11) NOT NULL,
+  `id_character` int(10) NOT NULL,
   `name` varchar(100) COLLATE utf8_bin NOT NULL,
   `description` varchar(200) COLLATE utf8_bin NOT NULL,
+  `hero_name` varchar(50) COLLATE utf8_bin NOT NULL,
+  `birthday` varchar(50) COLLATE utf8_bin NOT NULL,
+  `height` varchar(50) COLLATE utf8_bin NOT NULL,
+  `quirk` varchar(50) COLLATE utf8_bin NOT NULL,
   `fk_bloodtype` varchar(10) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -59,9 +98,10 @@ CREATE TABLE `_character` (
 -- Volcado de datos para la tabla `_character`
 --
 
-INSERT INTO `_character` (`id_character`, `name`, `description`, `fk_bloodtype`) VALUES
-(1, 'Izuku Midoriya', 'Brocoli', '0'),
-(2, 'Katsuki Bakugo', 'Explosivo', 'A');
+INSERT INTO `_character` (`id_character`, `name`, `description`, `hero_name`, `birthday`, `height`, `quirk`, `fk_bloodtype`) VALUES
+(8, 'Izuku midoriya', 'Brocoli', 'Deku', '15 De Julio', '166cm', 'One For All', '0'),
+(9, 'Katsuki Bakugo', 'Explosivo', 'Sin Confirmación Oficial', '20 De Abril', '172cm', 'Explosión', 'A'),
+(11, 'Ochaco Uraraka', 'Flotadora', 'Uravity', '27 De Diciembre', '156cm', 'Gravedad Cero', 'B');
 
 --
 -- Índices para tablas volcadas
@@ -72,6 +112,12 @@ INSERT INTO `_character` (`id_character`, `name`, `description`, `fk_bloodtype`)
 --
 ALTER TABLE `bloodtype`
   ADD PRIMARY KEY (`id_blood`);
+
+--
+-- Indices de la tabla `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id_user`);
 
 --
 -- Indices de la tabla `_character`
@@ -85,10 +131,16 @@ ALTER TABLE `_character`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `user`
+--
+ALTER TABLE `user`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `_character`
 --
 ALTER TABLE `_character`
-  MODIFY `id_character` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_character` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
