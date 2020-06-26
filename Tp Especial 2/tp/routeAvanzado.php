@@ -4,6 +4,9 @@ require_once "configApp.php";
 require_once "characterController.php";
 require_once "characterModel.php";
 require_once "characterView.php";
+require_once "userController.php";
+require_once "userModel.php";
+require_once "userView.php";
 
 function parseUrl($url){
     $partesUrl = explode("/" , $url);

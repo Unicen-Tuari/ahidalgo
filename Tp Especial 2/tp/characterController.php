@@ -13,8 +13,8 @@ class characterController{
         $this->model = new characterModel();
     }
 
-    function personajes($params){
-        $personajes = $this->model->getCharacters($params[0]);
+    function personajes(){
+        $personajes = $this->model->getCharacters();
         $this->view->mostrarPersonaje($personajes);
     }
 
@@ -52,6 +52,11 @@ class characterController{
 
       function veronline(){
         $this->view->mostrarVerOnline();
+      }
+
+      function admin(){
+        $personajes = $this->model->getCharacters();
+        $this->view->mostrarAdmin($personajes);
       }
       
     

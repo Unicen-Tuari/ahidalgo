@@ -13,7 +13,13 @@
         'juego' => 'characterController#juego',
         'admin' => 'characterController#admin',
         'newCharacter' => 'characterController#newCharacter',
-        'deleteCharacter' => 'characterController#deleteCharacter'
+        'deleteCharacter' => 'characterController#deleteCharacter',
+        'login' => 'userController#login',
+        'registrarse' => 'userController#registrarse',
+        'registro' => 'userController#registro',
+        'ingresar' => 'userController#ingresar',
+        'logout' => 'userController#logout'
+        
     ];
 }
 
