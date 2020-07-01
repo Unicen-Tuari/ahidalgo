@@ -38,6 +38,6 @@ if(array_key_exists($actionName,$actions)){
         echo $controller->$methodName();
     }
 }else{
-    echo $controller->index();
+    header("location: home");
 }
 ?>
