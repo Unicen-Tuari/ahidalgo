@@ -3,6 +3,7 @@
         <h1>Boku No Heroz - Administracion</h1>
         
   <h3>Agregar Personaje</h3>
+  <button type="button" class="boton-logout"><a href="logout">Logout</a></button>
   <div class="div-character-1">
   <form action ="newCharacter" method="get">
   <div class="form-group-1">

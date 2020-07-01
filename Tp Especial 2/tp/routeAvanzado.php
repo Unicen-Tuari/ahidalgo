@@ -7,6 +7,9 @@ require_once "characterView.php";
 require_once "userController.php";
 require_once "userModel.php";
 require_once "userView.php";
+require_once "adminView.php";
+require_once "adminController.php";
+require_once "adminModel.php";
 
 function parseUrl($url){
     $partesUrl = explode("/" , $url);

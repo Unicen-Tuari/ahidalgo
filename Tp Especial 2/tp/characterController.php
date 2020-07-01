@@ -22,18 +22,6 @@ class characterController{
         $this->view->mostrarIndex();
     }
 
-    function newCharacter(){
-        $this->model->createCharacter();
-        header("location: /tp/admin");
-    }
-
-    function deleteCharacter($params){
-        $this->model->removeCharacter($params[0]);
-        header("location: /tp/admin");
-        $personajes = $this->model->getCharacters();
-        $this->view->mostrarAdmin($personajes);
-      }
-
       function contacto(){
         $this->view->mostrarContacto();
       }
@@ -53,13 +41,7 @@ class characterController{
       function veronline(){
         $this->view->mostrarVerOnline();
       }
-
-      function admin(){
-        $personajes = $this->model->getCharacters();
-        $this->view->mostrarAdmin($personajes);
-      }
-      
-    
+          
 }
 
 ?>

@@ -16,9 +16,6 @@ class userView{
     function registrarse(){
         $this->smarty->display('templates/registrarse.tpl');
     }
-
-
-
 }
 
 ?>

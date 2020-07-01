@@ -16,11 +16,6 @@ class characterView{
         $this->smarty->display('templates/personajes.tpl');
       }
 
-      function mostrarAdmin($personajes){
-        $this->smarty->assign('personajes', $personajes);
-        $this->smarty->display('templates/admin.tpl');
-      }
-
       function mostrarIndex(){
         $this->smarty->display('templates/index.tpl');
       }

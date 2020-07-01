@@ -44,6 +44,8 @@ class userController{
         $hash = $user["password"];
 
         if(password_verify($password, $hash)){
+            session_start();
+            $_SESSION["nombre"] = $user["mail"];
            header("location: admin");
         }else{
             header("location: login");
@@ -51,7 +53,9 @@ class userController{
 }
 
     function logout(){
-
+        session_start();
+        session_destroy();
+        header("location: login");
     }
 
 }
