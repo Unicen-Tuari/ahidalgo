@@ -45,29 +45,6 @@ INSERT INTO `bloodtype` (`id_blood`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `section`
---
-
-CREATE TABLE `section` (
-  `name_section` varchar(100) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
---
--- Volcado de datos para la tabla `section`
---
-
-INSERT INTO `section` (`name_section`) VALUES
-('home'),
-('creadores'),
-('personajes'),
-('curiosidades'),
-('veronline'),
-('contáctanos'),
-('juego');
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `user`
 --
 
