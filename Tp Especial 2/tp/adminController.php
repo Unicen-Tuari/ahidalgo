@@ -13,7 +13,7 @@ class adminController{
 
         session_start();
         if(!isset($_SESSION["nombre"])){
-          header("location : login");
+          header("location: login");
           die();
         }
     }
