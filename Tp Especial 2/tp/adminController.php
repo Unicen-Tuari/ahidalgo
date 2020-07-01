@@ -12,9 +12,16 @@ class adminController{
         $this->model = new adminModel();
 
         session_start();
+        
         if(!isset($_SESSION["nombre"])){
-          header("location: login");
-          die();
+            header("location: login");
+            die();
+        }else{
+            if(isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 10)){
+            header("location: logout");
+            die();
+            }
+            $_SESSION["LAST_ACTIVITY"] = time();
         }
     }
 
