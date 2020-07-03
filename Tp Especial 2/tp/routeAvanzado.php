@@ -33,7 +33,7 @@ if(array_key_exists($actionName,$actions)){
     $methodName = $controllerMetodo[1];// index, personajes, etc. en configApp.php
 
     if(isset($params) && $params != null){
-        echo  $controller->$methodName($params);
+        echo $controller->$methodName($params);
     }else{
         echo $controller->$methodName();
     }

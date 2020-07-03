@@ -1,0 +1,67 @@
+h3{
+    text-align: center;
+}
+
+.margen{
+    border: 2px solid black;
+    margin-right: 87%;
+    margin-top: -5%;
+    padding-bottom: 60%;    
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+table, td{
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.agregar-sangre{
+    border: 2px black solid;
+    margin-right: 35%;
+    margin-left: 35%;  
+    margin-top: -45%;
+    margin-bottom: 1%;
+    padding: 0.5%;
+}
+
+.input-1{
+margin-left: 25%;
+margin-right: 20%;
+}
+
+.boton{
+    margin-left: 40%;
+    margin-right: 20%;
+}
+
+/* */
+
+.tipo-sangre{
+    border: 2px black solid;
+    margin-left: 42%;
+    margin-right: 42%;
+    margin-top: 0%;
+    padding-bottom: 1%;
+}
+
+.btn-danger{
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.btn-link{
+    margin-left: 10%;
+}
+
+.margen{
+    border: 2px solid black;
+    margin-right: 87%;
+    margin-top: -5%;
+    padding-bottom: 40%;    
+    padding-top: 2%;
+}

@@ -17,7 +17,7 @@ class adminController{
             header("location: login");
             die();
         }else{
-            if(isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 10)){
+            if(isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 100000000)){
             header("location: logout");
             die();
             }
@@ -41,6 +41,23 @@ class adminController{
         $personajes = $this->model->getCharacters();
         $this->view->mostrarAdmin($personajes);
       }
+
+    function tipoSangre(){
+        $tipoSangre = $this->model->getBloodtype();
+        $this->view->mostrarTipoSangre($tipoSangre);
+    }
+
+    function newBloodtype(){
+        $this->model->createBloodtype();
+        header("location: /tp/tipoSangre");
+    }
+
+    function deleteBloodtype($id_blood){
+        $this->model->removeBloodtype($id_blood[0]);
+        header("location: /tp/tipoSangre");
+        $tipoSangre = $this->model->getBloodtype();
+        $this->view->mostrarTipoSangre($tipoSangre);
+    }
 }
 
 

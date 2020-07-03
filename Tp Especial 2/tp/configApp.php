@@ -11,14 +11,17 @@
         'curiosidades' => 'characterController#curiosidades',
         'veronline' => 'characterController#veronline',
         'juego' => 'characterController#juego',
-        'admin' => 'adminController#admin',
         'newCharacter' => 'adminController#newCharacter',
         'deleteCharacter' => 'adminController#deleteCharacter',
         'login' => 'userController#login',
         'registrarse' => 'userController#registrarse',
         'registro' => 'userController#registro',
         'ingresar' => 'userController#ingresar',
-        'logout' => 'userController#logout'
+        'logout' => 'userController#logout',
+        'admin' => 'adminController#admin',
+        'tipoSangre' => 'adminController#tipoSangre',
+        'newBloodtype' => 'adminController#newBloodtype',
+        'deleteBloodtype' => 'adminController#deleteBloodtype'
         
     ];
 }

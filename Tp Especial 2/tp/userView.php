@@ -10,11 +10,11 @@ class userView{
     }
 
     function login(){
-        $this->smarty->display('templates/login.tpl');
+        $this->smarty->display('templates/user_login.tpl');
     }
 
     function registrarse(){
-        $this->smarty->display('templates/registrarse.tpl');
+        $this->smarty->display('templates/user_registrarse.tpl');
     }
 }
 

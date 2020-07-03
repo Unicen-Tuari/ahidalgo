@@ -12,7 +12,12 @@ class adminView{
 
     function mostrarAdmin($personajes){
         $this->smarty->assign('personajes', $personajes);
-        $this->smarty->display('templates/admin.tpl');
+        $this->smarty->display('templates/adm_personajes.tpl');
+    }
+
+    function mostrarTipoSangre($tipoSangre){
+        $this->smarty->assign('tipoSangre' , $tipoSangre);
+        $this->smarty->display('templates/adm_tipoDeSangre.tpl');
     }
 }
 
