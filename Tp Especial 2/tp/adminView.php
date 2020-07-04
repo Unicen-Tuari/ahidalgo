@@ -10,8 +10,9 @@ class adminView{
         $this->smarty = new Smarty;
     }
 
-    function mostrarAdmin($personajes){
+    function mostrarAdmin($personajes, $tipoSangre){
         $this->smarty->assign('personajes', $personajes);
+        $this->smarty->assign('tipoSangre' , $tipoSangre);
         $this->smarty->display('templates/adm_personajes.tpl');
     }
 

@@ -53,7 +53,9 @@
           <div class="form-group col-md-4">
             <label for="char_blood">Tipo De Sangre</label>
             <select id="char_blood" name="char_blood" class="form-control">
-              <option>Traido de la base</option>
+              {foreach $tipoSangre item=tipo}
+              <option>{$tipo['type_blood']}</option>
+              {/foreach}
             </select>
           </div>
         <div class="boton-personaje">

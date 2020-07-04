@@ -27,7 +27,8 @@ class adminController{
 
     function admin(){
         $personajes = $this->model->getCharacters();
-        $this->view->mostrarAdmin($personajes);
+        $tipoSangre = $this->model->getBloodtype();
+        $this->view->mostrarAdmin($personajes, $tipoSangre);
     }
 
     function newCharacter(){
