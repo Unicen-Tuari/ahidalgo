@@ -41,13 +41,13 @@
                     </tr>
                     <tr>
                         <td class="tabla-head">Tipo de Sangre</td>
-                        <td></td>
+                        <td>{$tipoSangre[$personaje['char_blood']-1]['type_blood']|capitalize}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
             <div class="texto-pers">
-                <p class="desc-pers">{$personaje['description']}</p>
+                <p class="desc-pers">{$personaje['description']|capitalize}</p>
             </div>
         </div>
         {/foreach}    
