@@ -16,7 +16,12 @@ class characterModel{
             $sentencia ->execute();
             return $sentencia->fetchAll();
         }
-
+        
+        function getBloodtype(){
+            $sentencia = $this->db->prepare( "select * from bloodtype");
+            $sentencia ->execute();
+            return $sentencia->fetchAll();
+        }
 }
 
 ?>

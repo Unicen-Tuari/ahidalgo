@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="http://localhost/tp/">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/personajes.css">
-    <title>Administración</title>
-</head>
-<body>
-    <h3>Boku No Heroz<small class="text-muted"> Administración</small></h3>
-
-    <div class="margen">
-        <button type="button" class="btn btn-link"><a href="admin">Personajes</a></button>
-        <button type="button" class="btn btn-link"><a href="tipoSangre">Tipo De Sangre</a></button>
-        <button type="button" class="btn btn-danger"><a href="logout">Logout</a></button>
-    </div>
-
+{include file="admin_header.tpl"}
 <div class="agregar-personaje">
     <h4>Agregar Personaje</h4>
     <form action="newCharacter" method="get">
@@ -62,13 +44,11 @@
         <input type="submit" class="btn btn-primary" value="Agregar">
         </div>
       </form>
-
     </div>
-
 
 <div class="lista-personajes">
     <h4>Lista De Personajes</h4>
-        <table class="table">
+        <table class="table border-white">
             <thead>
               <tr>
                 <th scope="col">Nombre</th>
@@ -83,19 +63,17 @@
             <tbody>
               {foreach $personajes item=personaje}
               <tr>
-                <td>{$personaje['name']}</td>
-                <td>{$personaje['description']}</td>
-                <td>{$personaje['hero_name']}</td>
-                <td>{$personaje['birthday']}</td>
-                <td>{$personaje['height']}</td>
-                <td>{$personaje['quirk']}</td>
-                <td>{$personaje['char_blood']}</td>
-                <td><button type="button" class="btn btn-link"><a href="deleteCharacter/{$personaje['id_character']}">Eliminar</a></button></td>
+                <td class="border-white">{$personaje['name']|capitalize}</td>
+                <td class="border-white">{$personaje['description']|capitalize}</td>
+                <td class="border-white">{$personaje['hero_name']|capitalize}</td>
+                <td class="border-white">{$personaje['birthday']|capitalize}</td>
+                <td class="border-white">{$personaje['height']|capitalize}</td>
+                <td class="border-white">{$personaje['quirk']|capitalize}</td>
+                <td class="border-white">{$tipo['type_blood']['id_blood']|capitalize}</td>
+                <td class="border-white"><button type="button" class="btn btn-link"><a href="deleteCharacter/{$personaje['id_character']}">Eliminar</a></button></td>
               </tr>
               {/foreach}
             </tbody>
           </table>
-
 </div>
-</body>
-</html>
+{include file="footer.tpl"}

@@ -18,7 +18,7 @@
 
         <div class="tabla-pers">
             <div class="imagen">
-            <img src="./img/no_disponible.jpg" alt="Izuku Midoriya" class="img-pers">
+            <img src="./img/no_disponible.jpg" class="img-pers">
             </div>
             <div>
             <table>
@@ -41,7 +41,7 @@
                     </tr>
                     <tr>
                         <td class="tabla-head">Tipo de Sangre</td>
-                        <td>0</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>

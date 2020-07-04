@@ -15,7 +15,8 @@ class characterController{
 
     function personajes(){
         $personajes = $this->model->getCharacters();
-        $this->view->mostrarPersonaje($personajes);
+        $tipoSangre = $this->model->getBloodtype();
+        $this->view->mostrarPersonaje($personajes, $tipoSangre);
     }
 
     function index(){

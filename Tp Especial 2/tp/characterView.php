@@ -11,8 +11,9 @@ class characterView{
         $this->smarty = new Smarty;
     }
 
-    function mostrarPersonaje($personajes){
+    function mostrarPersonaje($personajes , $tipoSangre){
         $this->smarty->assign('personajes', $personajes);
+        $this->smarty->assign('tipoSangre', $tipoSangre);
         $this->smarty->display('templates/personajes.tpl');
       }
 

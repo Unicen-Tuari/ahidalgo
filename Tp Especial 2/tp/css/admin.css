@@ -1,35 +1,87 @@
-h1{
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-h3{
+h3, h4{
     text-align: center;
 }
 
-.div-character-1{
-    width: 30%;
-    text-align: center;
-    padding-bottom: 5px;
-    margin-right: 5%;
-    margin-left: 18%;
-    float: left;
+.btn-danger{
+    margin-top: 10%;
+    margin-right: 15%;
 }
 
-.div-character-2{
-    width: 30%;
+.margen{
+    border: 2px solid black;
+    margin-right: 87%;
+    margin-top: -5%;
+    padding-bottom: 60%;    
+    padding-top: 4%;
     text-align: center;
-    float: left;
-    padding-bottom: -30px;
-
 }
 
-.btn-primary{
-    margin-left: 47.5%;
-    margin-top: 1%;
+.agregar-personaje{
+    border: 2px solid black;
+    margin-left: 15%;
+    margin-top: -65%;
+    margin-bottom: 2%;
+    width: 75%;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.lista-personajes{
+    border: 2px solid black;
+    margin-left: 15%;
+    margin-top: 0%;
+    width: 75%;
+}
+
+.col-md-4{
+    margin-left: 35%;
+}
+
+
+/* */
+table, td{
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.agregar-sangre{
+    border: 2px black solid;
+    margin-right: 35%;
+    margin-left: 35%;  
+    margin-top: -65%;
     margin-bottom: 1%;
+    padding: 0.5%;
 }
 
-.boton-logout{
+.input-1{
+margin-left: 25%;
+margin-right: 20%;
+}
+
+.boton{
+    margin-left: 40%;
+    margin-right: 20%;
+}
+
+.tipo-sangre{
+    border: 2px black solid;
+    margin-left: 42%;
+    margin-right: 42%;
+    margin-top: 0%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+.btn-danger{
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.btn-link{
     margin-left: 10%;
+}
+
+.border-white{
+    border: 2px solid white;
 }
