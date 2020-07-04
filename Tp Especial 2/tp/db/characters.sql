@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-06-2020 a las 19:49:32
--- Versión del servidor: 10.1.28-MariaDB
--- Versión de PHP: 7.1.11
+-- Tiempo de generación: 04-07-2020 a las 22:51:03
+-- Versión del servidor: 10.4.13-MariaDB
+-- Versión de PHP: 7.4.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -29,18 +28,16 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `bloodtype` (
-  `id_blood` varchar(10) COLLATE utf8_bin NOT NULL
+  `id_blood` int(2) NOT NULL,
+  `type_blood` varchar(2) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Volcado de datos para la tabla `bloodtype`
 --
 
-INSERT INTO `bloodtype` (`id_blood`) VALUES
-('0'),
-('A'),
-('AB'),
-('B');
+INSERT INTO `bloodtype` (`id_blood`, `type_blood`) VALUES
+(1, 'A');
 
 -- --------------------------------------------------------
 
@@ -68,17 +65,8 @@ CREATE TABLE `_character` (
   `birthday` varchar(50) COLLATE utf8_bin NOT NULL,
   `height` varchar(50) COLLATE utf8_bin NOT NULL,
   `quirk` varchar(50) COLLATE utf8_bin NOT NULL,
-  `fk_bloodtype` varchar(10) COLLATE utf8_bin NOT NULL
+  `char_blood` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
---
--- Volcado de datos para la tabla `_character`
---
-
-INSERT INTO `_character` (`id_character`, `name`, `description`, `hero_name`, `birthday`, `height`, `quirk`, `fk_bloodtype`) VALUES
-(8, 'Izuku midoriya', 'Brocoli', 'Deku', '15 De Julio', '166cm', 'One For All', '0'),
-(9, 'Katsuki Bakugo', 'Explosivo', 'Sin Confirmación Oficial', '20 De Abril', '172cm', 'Explosión', 'A'),
-(11, 'Ochaco Uraraka', 'Flotadora', 'Uravity', '27 De Diciembre', '156cm', 'Gravedad Cero', 'B');
 
 --
 -- Índices para tablas volcadas
@@ -101,11 +89,17 @@ ALTER TABLE `user`
 --
 ALTER TABLE `_character`
   ADD PRIMARY KEY (`id_character`),
-  ADD KEY `fk_bloodtype` (`fk_bloodtype`);
+  ADD KEY `char_blood` (`char_blood`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `bloodtype`
+--
+ALTER TABLE `bloodtype`
+  MODIFY `id_blood` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `user`
@@ -118,6 +112,16 @@ ALTER TABLE `user`
 --
 ALTER TABLE `_character`
   MODIFY `id_character` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `_character`
+--
+ALTER TABLE `_character`
+  ADD CONSTRAINT `fk_id_blood` FOREIGN KEY (`char_blood`) REFERENCES `bloodtype` (`id_blood`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
