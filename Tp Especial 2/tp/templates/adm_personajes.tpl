@@ -45,7 +45,6 @@
         </div>
       </form>
     </div>
-
 <div class="lista-personajes">
     <h4>Lista De Personajes</h4>
         <table class="table border-white">
@@ -62,6 +61,7 @@
             </thead>
             <tbody>
               {foreach $personajes item=personaje}
+              {$id = $personaje['char_blood']}
               <tr>
                 <td class="border-white">{$personaje['name']|capitalize}</td>
                 <td class="border-white">{$personaje['description']|capitalize}</td>
@@ -69,7 +69,7 @@
                 <td class="border-white">{$personaje['birthday']|capitalize}</td>
                 <td class="border-white">{$personaje['height']|capitalize}</td>
                 <td class="border-white">{$personaje['quirk']|capitalize}</td>
-                <td class="border-white">{$tipo['type_blood']['id_blood']|capitalize}</td>
+                <td class="border-white">{$id|capitalize}</td>
                 <td class="border-white"><button type="button" class="btn btn-link"><a href="deleteCharacter/{$personaje['id_character']}">Eliminar</a></button></td>
               </tr>
               {/foreach}
