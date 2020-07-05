@@ -1,7 +1,4 @@
 {include file="user_header.tpl"}
-        <title>Login</title>
-      </head>
-
       <body>
       <h3>Boku No Heroz - Administración<small class="text-muted"> Ingresar</small></h3>
 
@@ -19,5 +16,4 @@
         <input class="btn btn-dark" type="submit" value="Acceder">
         <button type="button" class="btn btn-link"><a href="registrarse">No tienes usuario? Registrate ahora!</a></button>
       </form>
-
 {include file="footer.tpl"}

@@ -11,9 +11,9 @@ class adminModel{
     }
 
     function getCharacters(){
-        $sentencia = $this->db->prepare( "select * from _character");
+        $sentencia = $this->db->prepare("SELECT c.*, b.type_blood from _character c join bloodtype b on (c.char_blood = b.id_blood)");
         $sentencia ->execute();
-        return $sentencia->fetchAll();
+        return $sentencia->fetchAll(PDO::FETCH_ASSOC);
     }
 
     function createCharacter(){
@@ -27,7 +27,7 @@ class adminModel{
     }
 
     function getBloodtype(){
-        $sentencia = $this->db->prepare( "select * from bloodtype");
+        $sentencia = $this->db->prepare( "SELECT * from bloodtype");
         $sentencia ->execute();
         return $sentencia->fetchAll();
     }

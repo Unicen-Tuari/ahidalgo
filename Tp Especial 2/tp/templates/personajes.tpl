@@ -41,7 +41,7 @@
                     </tr>
                     <tr>
                         <td class="tabla-head">Tipo de Sangre</td>
-                        <td>{$tipoSangre[$personaje['char_blood']-1]['type_blood']|capitalize}</td>
+                        <td>{$personaje['type_blood']}</td>
                     </tr>
                 </tbody>
             </table>

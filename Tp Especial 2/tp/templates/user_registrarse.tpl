@@ -1,7 +1,4 @@
 {include file="user_header.tpl"}
-<title>Registrarse</title>
-</head>
-
 <body>
 <h3>Boku No Heroz - Administración<small class="text-muted"> Registrarse</small></h3>
 

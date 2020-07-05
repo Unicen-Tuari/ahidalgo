@@ -36,7 +36,7 @@
             <label for="char_blood">Tipo De Sangre</label>
             <select id="char_blood" name="char_blood" class="form-control">
               {foreach $tipoSangre item=tipo}
-              <option value="{$tipo['id_blood']}">{$tipo['type_blood']}</option>
+              <option value="{$tipo['id_blood']}">{$tipo['type_blood']|capitalize}</option>
               {/foreach}
             </select>
           </div>
@@ -69,7 +69,7 @@
                 <td class="border-white">{$personaje['birthday']|capitalize}</td>
                 <td class="border-white">{$personaje['height']|capitalize}</td>
                 <td class="border-white">{$personaje['quirk']|capitalize}</td>
-                <td class="border-white">{$tipoSangre[$personaje['char_blood']-1]['type_blood']|capitalize}</td>
+                <td class="border-white">{$personaje['type_blood']|capitalize}</td>
                 <td class="border-white"><button type="button" class="btn btn-link"><a href="deleteCharacter/{$personaje['id_character']}">Eliminar</a></button></td>
               </tr>
               {/foreach}

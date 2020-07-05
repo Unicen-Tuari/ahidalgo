@@ -11,11 +11,11 @@ class characterModel{
         $this->db = new PDO('mysql:host=localhost;'.'dbname=characters;charset=utf8', 'root', '');
     }
 
-        function getCharacters(){
-            $sentencia = $this->db->prepare( "select * from _character");
-            $sentencia ->execute();
-            return $sentencia->fetchAll();
-        }
+    function getCharacters(){
+        $sentencia = $this->db->prepare("SELECT c.*, b.type_blood from _character c join bloodtype b on (c.char_blood = b.id_blood)");
+        $sentencia ->execute();
+        return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+    }
         
         function getBloodtype(){
             $sentencia = $this->db->prepare( "select * from bloodtype");
