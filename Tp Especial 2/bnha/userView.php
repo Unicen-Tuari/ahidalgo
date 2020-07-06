@@ -1,4 +1,6 @@
 <?php
+
+require_once "libs/Smarty.class.php";
 require_once "userController.php";
 require_once "userModel.php";
 

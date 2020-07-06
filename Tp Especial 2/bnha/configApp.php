@@ -16,15 +16,15 @@ define('BASE_URL','//'.$_SERVER['SERVER_NAME'] . ':' .$_SERVER['SERVER_PORT'] . 
         'juego' => 'characterController#juego',
         'newCharacter' => 'adminController#newCharacter',
         'deleteCharacter' => 'adminController#deleteCharacter',
+        'admin' => 'adminController#admin',
+        'tipoSangre' => 'adminController#tipoSangre',
+        'newBloodtype' => 'adminController#newBloodtype',
+        'deleteBloodtype' => 'adminController#deleteBloodtype',
         'login' => 'userController#login',
         'registrarse' => 'userController#registrarse',
         'registro' => 'userController#registro',
         'ingresar' => 'userController#ingresar',
-        'logout' => 'userController#logout',
-        'admin' => 'adminController#admin',
-        'tipoSangre' => 'adminController#tipoSangre',
-        'newBloodtype' => 'adminController#newBloodtype',
-        'deleteBloodtype' => 'adminController#deleteBloodtype'
+        'logout' => 'userController#logout'
         
     ];
 }

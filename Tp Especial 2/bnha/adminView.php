@@ -1,5 +1,6 @@
 <?php
 
+require_once "libs/Smarty.class.php";
 require_once "adminController.php";
 require_once "adminModel.php";
 
