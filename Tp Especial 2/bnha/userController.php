@@ -23,12 +23,12 @@ class userController{
 
     function registro(){
         if($_POST["email"]==""){
-            //mostrar error
+            echo "El formato del Email no es válido";
             return;
         }
 
         if($_POST["password"]==""){
-            //mostrar error
+            echo "Contraseña Incorrecta";
             return;
         }
 

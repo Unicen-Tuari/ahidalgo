@@ -17,7 +17,7 @@ class adminController{
             header("location: login");
             die();
         }else{
-            if(isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 100000000)){
+            if(isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 300)){
             header("location: logout");
             die();
             }
