@@ -33,12 +33,12 @@ class adminController{
 
     function newCharacter(){
         $this->model->createCharacter();
-        header("location: /tp/admin");
+        header("location: /bnha/admin");
     }
 
     function deleteCharacter($params){
         $this->model->removeCharacter($params[0]);
-        header("location: /tp/admin");
+        header("location: /bnha/admin");
         $personajes = $this->model->getCharacters();
         $this->view->mostrarAdmin($personajes);
       }
@@ -50,12 +50,12 @@ class adminController{
 
     function newBloodtype(){
         $this->model->createBloodtype();
-        header("location: /tp/tipoSangre");
+        header("location: /bnha/tipoSangre");
     }
 
     function deleteBloodtype($id_blood){
         $this->model->removeBloodtype($id_blood[0]);
-        header("location: /tp/tipoSangre");
+        header("location: /bnha/tipoSangre");
         $tipoSangre = $this->model->getBloodtype();
         $this->view->mostrarTipoSangre($tipoSangre);
     }
